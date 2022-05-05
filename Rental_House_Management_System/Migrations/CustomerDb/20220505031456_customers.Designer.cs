@@ -12,7 +12,7 @@ using Rental_House_Management_System.Data;
 namespace Rental_House_Management_System.Migrations.CustomerDb
 {
     [DbContext(typeof(CustomerDbContext))]
-    [Migration("20220505024226_customers")]
+    [Migration("20220505031456_customers")]
     partial class customers
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -60,6 +60,10 @@ namespace Rental_House_Management_System.Migrations.CustomerDb
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Phone")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Room")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 

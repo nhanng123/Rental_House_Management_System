@@ -18,6 +18,7 @@ namespace Rental_House_Management_System.Configuration
             builder.Property(x => x.Job).IsRequired();
             builder.Property(x => x.Company);
             builder.Property(x => x.Phone).IsRequired();
+            builder.Property(x => x.Room).IsRequired();
         }
     }
 }
