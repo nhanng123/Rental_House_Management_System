@@ -11,7 +11,7 @@ using Rental_House_Management_System.Data;
 namespace Rental_House_Management_System.Migrations.RepairDb
 {
     [DbContext(typeof(RepairDbContext))]
-    [Migration("20220505033446_repairs")]
+    [Migration("20220507020408_repairs")]
     partial class repairs
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -35,6 +35,11 @@ namespace Rental_House_Management_System.Migrations.RepairDb
                     b.Property<string>("Room")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
+
+                    b.Property<bool>("State")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("bit")
+                        .HasDefaultValue(false);
 
                     b.HasKey("Id");
 

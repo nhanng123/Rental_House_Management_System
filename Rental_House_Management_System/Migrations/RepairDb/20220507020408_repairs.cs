@@ -14,7 +14,8 @@ namespace Rental_House_Management_System.Migrations.RepairDb
                 {
                     Id = table.Column<string>(type: "nvarchar(450)", nullable: false),
                     Room = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    Description = table.Column<string>(type: "nvarchar(max)", nullable: false)
+                    Description = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    State = table.Column<bool>(type: "bit", nullable: false, defaultValue: false)
                 },
                 constraints: table =>
                 {

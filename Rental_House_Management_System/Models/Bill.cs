@@ -4,7 +4,6 @@
     {
         public string Id { get; set; }
         public string Room { get; set; }
-
         public int Price { get; set; }
         public DateTime Time { get; set; }
         public int Electric_Num { get; set; }

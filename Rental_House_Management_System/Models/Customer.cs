@@ -11,7 +11,6 @@
         public string Nationality { get; set; }
         public string Company { get; set; }
         public string Phone { get; set; }
-
         public string Room { get; set; }
     }
 }

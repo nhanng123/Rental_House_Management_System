@@ -12,6 +12,8 @@ namespace Rental_House_Management_System.Configuration
             builder.HasKey(x => x.Id);
             builder.Property(x => x.Room);
             builder.Property(x => x.Description);
+            builder.Property(x => x.State).HasDefaultValue(false);
         }
     }
+
 }
